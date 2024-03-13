@@ -59,7 +59,7 @@
  const secureContext = tls.createSecureContext(secureContextOptions);
  
  var proxyFile = "proxy.txt";
- var proxyFile2 = "http.txt";
+ var proxyFile2 = "proxy.txt";
  var proxies = readLines(proxyFile);
  var proxies2 = readLines(proxyFile2);
  var userAgents = readLines("ua.txt");
